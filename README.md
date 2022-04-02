@@ -2,7 +2,7 @@
 
 - 初始化
 ```c#
-Malody malody = new Malody(查分账号使用的账号, 查分账号使用的密码);
+Malody malody = new Malody("查分账号使用的账号", "查分账号使用的密码");
 //Malody malody = new Malody(查分账号使用的账号,查分账号使用的密码,Malody网站的基本Url（可选）,请求时Header中UserAgent（可选）);
 ```
 - 查询名字包含siscon字样的用户list
