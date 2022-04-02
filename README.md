@@ -12,30 +12,30 @@ var queryList = await ma.MalodyUserQuery("siscon");
 
 - 查询malody id为308032的最近游玩歌曲信息
 ```c#
-var userRecentScore = await ma.SearchRecent(308032);//
+var userRecentScore = await ma.SearchRecent(308032);
 ```
 
 - 查询malody id为308032的用户信息
 ```c#
-var user = await ma.GetUserInfo(308032);//
+var user = await ma.GetUserInfo(308032);
 ```
 
 - 获取查分账号的xCsrfToken
 ```c#
-var xCsrfToken = ma.GetXCsrfToken();//
+var xCsrfToken = ma.GetXCsrfToken();
 ```
 
 - 获取查分账号的sessionId
 ```c#
-var sessionId = ma.GetSessionId();//
+var sessionId = ma.GetSessionId();
 ```
 
 - 获取查分账号的xCsrfToken过期时间
 ```c#
-var xCsrfTokenExpireDate = ma.GetXCsrfTokenExpireDate();//
+var xCsrfTokenExpireDate = ma.GetXCsrfTokenExpireDate();
 ```
 
 - 获取查分账号的sessionId过期时间
 ```c#
-var sessionIdExpireDate = ma.GetSessionIdExpireDate();//
+var sessionIdExpireDate = ma.GetSessionIdExpireDate();
 ```
