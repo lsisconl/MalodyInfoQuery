@@ -2,45 +2,45 @@
 
 - 初始化
 ```c#
-Malody malody = new Malody("查分账号使用的账号", "查分账号使用的密码");
-//Malody malody = new Malody(查分账号使用的账号,查分账号使用的密码,Malody网站的基本Url（可选）,请求时Header中UserAgent（可选）);
+Malody malody = new Malody( "查分账号使用的账号" ,  "查分账号使用的密码" );
+//Malody malody = new Malody( 查分账号使用的账号 , 查分账号使用的密码 , Malody网站的基本Url（可选）, 请求时Header中UserAgent（可选）);
 ```
-- 查询名字包含siscon字样的用户list
+- 查询名字包含 siscon 字样的用户 list
 ```c#
 var queryList = await ma.MalodyUserQuery("siscon");
 ```
 
-- 查询malody id为308032的最近游玩歌曲信息
+- 查询 malody id 为 308032 的最近游玩歌曲信息
 ```c#
 var userRecentScore = await ma.SearchRecent(308032);
 ```
 
-- 查询malody id为308032的用户信息
+- 查询 malody id 为 308032 的用户信息
 ```c#
 var user = await ma.GetUserInfo(308032);
 ```
 
-- 获取查分账号的xCsrfToken
+- 获取查分账号的 xCsrfToken
 ```c#
 var xCsrfToken = ma.GetXCsrfToken();
 ```
 
-- 获取查分账号的sessionId
+- 获取查分账号的 sessionId
 ```c#
 var sessionId = ma.GetSessionId();
 ```
 
-- 获取查分账号的xCsrfToken过期时间
+- 获取查分账号的 xCsrfToken 过期时间
 ```c#
 var xCsrfTokenExpireDate = ma.GetXCsrfTokenExpireDate();
 ```
 
-- 获取查分账号的sessionId过期时间
+- 获取查分账号的 sessionId 过期时间
 ```c#
 var sessionIdExpireDate = ma.GetSessionIdExpireDate();
 ```
 
-- MalodyUserInfoModel (用户信息类)
+- MalodyUserInfoModel ( 用户信息类 )
 ```c#
 public string UserName { get; set; }
 public DateTime JoinedTime { get; set; }
@@ -60,7 +60,7 @@ public List<MalodyUserActivityModel> MalodyUserActivities { get; set; }
 public List<string> MalodyAchievePicUrls { get; set; }
 ```
 
-- MalodyUserRankModel(Malody用户排名类)
+- MalodyUserRankModel ( Malody用户排名类 )
 ```c#
 public MalodyPlayMode Mode { get; set; }
 public int Rank { get; set; }
@@ -70,7 +70,7 @@ public float Acc { get; set; }
 public int Combo { get; set; }
 ```
 
-- MalodySongModel(歌曲信息类)
+- MalodySongModel ( 歌曲信息类 )
 ```c#
 public string SongName { get; set; }
 public string CoverPicUrl { get; set; }
